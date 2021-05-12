@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body style="background-color: #F1F3F4;">
+    <div class="parent">
+        <div class="form1">
+            <h1>Form <br> Submission:</h1>
+            <form>
+                <label for="f_name">First Name:</label>
+                <br>
+                <input type="text" placeholder='First Name' id='f_name'>
+                <br>
+                <label for="l_name">Last Name:</label>
+                <br>
+                <input type="text" placeholder="Last Name" id="l_name" >
+                <br>
+                <label for="Add_Line1:">Address Line 1:</label>
+                <br>
+                <input type="text" placeholder="Address Line 1" id="addline1" >
+                <br>
+                <label for="Add_Line2:">Address Line 2:</label>
+                <br>
+                <input type="text" placeholder="Address Line 2" id="addline2">
+                <br>
+                <label for="pin">PIN:</label>
+                <br>
+                <input type="text" placeholder="PIN" id="pin" >
+                <br>
+                <label for="gender">Gender:</label>
+                <br>
+                <input type="radio" name='gender' id='gender'value="Male">&nbsp;&nbsp;Male &nbsp;&nbsp;
+                <input type="radio" name="gender" id="gender" value="Female">&nbsp;&nbsp;Female
+                <br>
+                <label for="food" class='food_label'>Choice of your Food:</label> <br> <span>Must select atleast 2 out of 4</span>
+                <br>
+                <input type="checkbox" name="food" id="food" value="Chicken">&nbsp;&nbsp;Chicken
+                <br>
+                <input type="checkbox" name="food" id="food" value="Mutton">&nbsp;&nbsp;Mutton
+                <br>
+                <input type="checkbox" name="food" id="food" value="Fish">&nbsp;&nbsp;Fish
+                <br>
+                <input type="checkbox" name="food" id="food" value="Prawn">&nbsp;&nbsp;Prawn
+                <br>
+                <label for="state">State:</label>
+                <br>
+                <input type="text" placeholder="Enter your state" id="state" >
+                <br>
+                <label for="country">Country:</label>
+                <br>
+                <input type="text" placeholder="Enter your country" id="country">
+                <br>
+                <button type="Submit" id="btn">Submit</button>
+            </form>
+        </div>
+        <div class="table_1">
+            <h1>Temporary Database</h1>
+            <table class="tab table table-striped">
+                <thead class="t_head ">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>Pincode</th>
+                        <th>Gender</th>
+                        <th>Food</th>
+                        <th>State</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody class="t_body" id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
